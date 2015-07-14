@@ -1,8 +1,6 @@
 Till tech test
 ==============
 
-*Instructions*: Please fork this repo and submit a pull request once you've finished. Then prepare for code review!
-
 ![a till](/images/till.jpg)
 
 We want to sell tills to local hipster coffee shop who are finally embracing the 21st century. We need a new till to replace their vintage machines - unfortunately, hipster staff are too cool to learn a new system, so we need you to build something that they will understand.
@@ -15,6 +13,38 @@ This is what a sample receipt looks like:
 ![a receipt](/images/receipt.jpg)
 
 
+User Stories
+---------
+
+```
+As a coffee shop worker
+So that I can process payments
+I would like a till
+
+As a coffee shop worker
+So that I can calculate the total cost of an order
+I would like the till to add up the price of each item ordered
+
+As a coffee shop worker
+So that I can charge the correct amount 
+I would a till to calculate a total price from ordered items 
+
+As a coffee shop worker
+So that I can charge the right amount
+I would like the till to calculate the tax due on an order
+
+As a customer
+So that I can see what I have ordered
+I would like a receipt with my items
+
+As a customer
+So that I can see how expensive the coffee shop is 
+I would like the prices of all items on my receipt
+
+As a customer
+So that I can see how much I have spent
+I would like a total price on my receipt
+```
 Version 1
 ---------
 
