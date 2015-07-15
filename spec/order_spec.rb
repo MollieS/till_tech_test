@@ -5,6 +5,12 @@ describe Order do
 
   it 'adds an item' do
     subject.add("Cafe Latte")
-    expect(subject.view).to eq("Cafe Latte")
+    expect(subject.view).to eq(["Cafe Latte"])
+  end
+
+  it 'can add multiple items' do
+    subject.add("Cafe Latte")
+    subject.add("Blueberry Muffin")
+    expect(subject.view).to eq(["Cafe Latte", "Blueberry Muffin"])
   end
 end

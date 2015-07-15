@@ -9,6 +9,6 @@ class Order
   end
 
   def view
-    @items.each { |item| return item }
+    @items
   end
 end
