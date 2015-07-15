@@ -14,6 +14,13 @@ class Till
 
   def total(order)
     items = order.view
+    costs = find_prices(items)
+    p costs
+    total_cost =  costs.inject { |sum, n| sum + n }
+    total_cost
+  end
+
+  def find_prices(items)
     item_prices = []
     items.each do |item|
       @prices.select do |key, value|
@@ -22,7 +29,7 @@ class Till
         end
       end
     end
-   cost =  item_prices.inject { |sum, n| sum + n }
-   cost
+    return item_prices
   end
+
 end
